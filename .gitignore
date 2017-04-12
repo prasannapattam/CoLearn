@@ -8,8 +8,8 @@
 /**/project.lock.json
 
 # javascript files
-*.js
-*.js.map
+/**/wwwroot/app/**/*.js
+/**/wwwroot/app/**/*.js.map
 /**/wwwroot/lib
 /**/node_modules
 
