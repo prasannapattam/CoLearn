@@ -1,0 +1,7 @@
+﻿<h1>List of Heroes</h1>
+
+<ul>
+    <li *ngFor="let hero of heroList; index as i; trackBy: id">
+        <a routerLink="/hero/{{hero.id}}">{{ hero.name }}</a>
+    </li>
+</ul>

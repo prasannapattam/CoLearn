@@ -1,0 +1,15 @@
+﻿<h1>{{ hero.name }}</h1>
+
+<form [formGroup]="heroForm" (ngSubmit)="submitChanges()">
+    <md-input-container [formGroup]="heroForm">
+        <input mdInput placeholder="Hero Id" formControlName="id">
+    </md-input-container>
+    <br />
+    
+    <md-input-container [formGroup]="heroForm">
+        <input mdInput placeholder="Hero Name" formControlName="name">
+    </md-input-container>
+    
+    <br />
+    <button type="submit" >Submit Changes</button>
+</form>

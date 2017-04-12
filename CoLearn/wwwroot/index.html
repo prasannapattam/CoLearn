@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <title>Co Learn</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lib/css/@angular/indigo-pink.css" rel="stylesheet">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="lib/js/systemjs/shim.min.js"></script>
+
+    <script src="lib/js/systemjs/zone.js"></script>
+    <script src="lib/js/systemjs/Reflect.js"></script>
+    <script src="lib/js/systemjs/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</head>
+<body>
+    <my-app></my-app>
+    <hero-list></hero-list>
+</body>
+</html>
